@@ -1,10 +1,15 @@
 package net.captaindude.essentialpedestals;
 
-import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import net.captaindude.essentialpedestals.blocks.ModBlocks;
+import net.captaindude.essentialpedestals.blocks.entitity.ModBlockEntities;
+import net.captaindude.essentialpedestals.items.ModItemGroups;
+import net.captaindude.essentialpedestals.screen.ModScreenHandlers;
+import net.fabricmc.api.ModInitializer;
+
+// With help from Kaupenjoe: https://kaupenjoe.net
 public class EssentialPedestals implements ModInitializer {
 	public static final String MOD_ID = "essentialpedestals";
 
@@ -19,6 +24,11 @@ public class EssentialPedestals implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		ModBlocks.registerModBlocks();
+		ModScreenHandlers.registerScreenHandlers();
+		ModBlockEntities.registerBlockEntities();
+		ModItemGroups.registerItemGroups();
+
+		LOGGER.info("Initializing " + MOD_ID);
 	}
 }

@@ -20,14 +20,13 @@
 		],
 		"client": [
 			"net.captaindude.essentialpedestals.EssentialPedestalsClient"
+		],
+		"fabric-datagen": [
+			"net.captaindude.essentialpedestals.EssentialPedestalsDataGenerator"
 		]
 	},
 	"mixins": [
-		"essentialpedestals.mixins.json",
-		{
-			"config": "essentialpedestals.client.mixins.json",
-			"environment": "client"
-		}
+		"essentialpedestals.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
