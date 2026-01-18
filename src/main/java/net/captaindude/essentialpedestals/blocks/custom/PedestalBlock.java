@@ -87,7 +87,7 @@ public class PedestalBlock extends BlockWithEntity {
                 world.updateListeners(pos, state, state, 0); // Updates block
             } else if (stack.isEmpty() && !player.isSneaking() && !pedestalBlockEntity.isEmpty()) {  // Removes item from pedestal and gives it to player if player's hand is empty and player isn't sneaking
                 ItemStack stackOnPedestal = pedestalBlockEntity.getStack(0);
-                player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal); // Adds item on pedestal to player's hand
+                if (!player.isInCreativeMode()) {player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);} // Adds item on pedestal to player's hand
                 world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
                 pedestalBlockEntity.clear(); // Clears inventory of pedestal
 
