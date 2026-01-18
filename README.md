@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="img/title.png" alt="Essential Pedestals">
+  <img src="https://github.com/Capta1nDude/Essential-Pedestals/blob/main/img/title.png?raw=true" alt="Essential Pedestals">
 </p>
 
 <p align="center" style="text-align: center;">
-  <a href="https://modrinth.com/mod/essential-pedestals"><img src="img/modrinth_vector.svg" alt="Available on Modrinth" style="margin: 5px 10px;"></a>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/essential-pedestals"><img src="img/curseforge_vector.svg" alt="Available on CurseForge" style="margin: 5px 10px;"></a>
-	<a href="https://github.com/Capta1nDude/Essential-Pedestals"><img src="img/github_vector.svg" alt="Available on GitHub" style="margin: 5px 10px;"></a>
+  <a href="https://modrinth.com/mod/essential-pedestals"><img src="https://github.com/Capta1nDude/Essential-Pedestals/blob/main/img/modrinth_label.png?raw=true" alt="Available on Modrinth" style="margin: 5px 10px;"></a>
+  <a href="https://www.curseforge.com/minecraft/mc-mods/essential-pedestals"><img src="https://github.com/Capta1nDude/Essential-Pedestals/blob/main/img/curseforge_label.png?raw=true" alt="Available on CurseForge" style="margin: 5px 10px;"></a>
+	<a href="https://github.com/Capta1nDude/Essential-Pedestals"><img src="https://cdn.modrinth.com/data/cached_images/b2a7c4f7aad3c62b56329dd0b5a4a6eb06dd6eea.png" alt="Available on GitHub" style="margin: 5px 10px;"></a>
 </p>
 
 
 <p align="center">
-  <img src="img/fabric_vector.svg" alt="Fabric">
+  <img src="https://github.com/Capta1nDude/Essential-Pedestals/blob/main/img/fabric_label.png?raw=true" alt="Available for Fabric">
 </p>
 
 <hr>
@@ -43,17 +43,17 @@
   </thead>
   <tbody>
     <tr>
-      <td>1.21.1</td>
+      <td>1.21 to 1.21.1</td>
       <td>Fabric</td>
       <td>✔</td>
     </tr>
     <tr>
-      <td>1.21.1</td>
+      <td>1.21 to 1.21.1</td>
       <td>Forge / NeoForge / Other</td>
       <td>✘</td>
     </tr>
     <tr>
-      <td>1.21 and below</td>
+      <td>1.20.X and below</td>
       <td>Fabric / NeoForge / Forge / Other</td>
       <td>✘</td>
     </tr>
@@ -102,6 +102,3 @@
     for the pedestal model and texture, as well as some of the code, and for teaching me and many others
   </li>
 </ul>
-
-</body>
-</html>
