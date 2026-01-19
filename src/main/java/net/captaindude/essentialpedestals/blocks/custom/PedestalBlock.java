@@ -15,8 +15,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -74,7 +74,7 @@ public class PedestalBlock extends BlockWithEntity {
     // Takes the item from player's hand and puts it on the pedestal
     // Takes the item from the pedestal and puts it in player's hand
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
+    protected ActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
             PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (world.getBlockEntity(pos) instanceof PedestalBlockEntity pedestalBlockEntity) {
             // Adds item to pedestal if it's empty
@@ -96,11 +96,11 @@ public class PedestalBlock extends BlockWithEntity {
             } else if (player.isSneaking() && !world.isClient()) {
                 player.openHandledScreen(pedestalBlockEntity);
             } else {
-                return ItemActionResult.FAIL;
+                return ActionResult.FAIL;
             }
         }
 
-        return ItemActionResult.SUCCESS;
+        return ActionResult.SUCCESS;
     }
 
 }

@@ -14,7 +14,6 @@ import net.minecraft.util.math.BlockPos;
 public class PedestalScreenHandler extends ScreenHandler {
     private final Inventory inventory;
 
-    // Why? Great question
     public PedestalScreenHandler(int syncId, PlayerInventory playerInventory, BlockPos pos) {
         this(syncId, playerInventory, playerInventory.player.getWorld().getBlockEntity(pos));
     }

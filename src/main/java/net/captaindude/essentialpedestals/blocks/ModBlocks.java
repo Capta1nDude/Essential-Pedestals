@@ -8,12 +8,16 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     // Pedestal registration
     public static final Block PEDESTAL = registerBlock("pedestal",
-        new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
+        new PedestalBlock(AbstractBlock.Settings.create()
+            .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(EssentialPedestals.MOD_ID, "pedestal")))
+            .nonOpaque()));
 
     // Register block to registry (creates the block in the game)
     private static Block registerBlock(String name, Block block) {
@@ -24,7 +28,7 @@ public class ModBlocks {
     // Register block item to registry (creates the block as an item in the game)
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(EssentialPedestals.MOD_ID, name), 
-            new BlockItem(block, new Item.Settings()));
+            new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EssentialPedestals.MOD_ID, name))).useBlockPrefixedTranslationKey()));
     }
 
 
