@@ -43,12 +43,17 @@
   </thead>
   <tbody>
     <tr>
-      <td>1.21 to 1.21.1</td>
+      <td>1.21.2 to 1.21.3</td>
       <td>Fabric</td>
       <td>✔</td>
     </tr>
     <tr>
       <td>1.21 to 1.21.1</td>
+      <td>Fabric</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>1.21 to 1.21.3</td>
       <td>Forge / NeoForge / Other</td>
       <td>✘</td>
     </tr>
@@ -58,7 +63,7 @@
       <td>✘</td>
     </tr>
     <tr>
-      <td>1.21.2 and above</td>
+      <td>1.21.4 and above</td>
       <td>Fabric / NeoForge / Forge / Other</td>
       <td>✘</td>
     </tr>

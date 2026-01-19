@@ -4,6 +4,7 @@ import net.captaindude.essentialpedestals.EssentialPedestals;
 import net.captaindude.essentialpedestals.blocks.custom.PedestalBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -15,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     // Pedestal registration
     public static final Block PEDESTAL = registerBlock("pedestal",
-        new PedestalBlock(AbstractBlock.Settings.create()
+        new PedestalBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE)
             .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(EssentialPedestals.MOD_ID, "pedestal")))
             .nonOpaque()));
 
